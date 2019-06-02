@@ -20,7 +20,7 @@ class App extends React.Component {
       return;
     }
 
-    const column = this.state.columns[source.draggableId];
+    const column = this.state.columns[source.droppableId];
     const newTaskIds = Array.from(column.taskIds);
     newTaskIds.splice(source.index, 1);
     newTaskIds.splice(destination.index, 0, draggableId);
